@@ -1,0 +1,51 @@
+page-home {
+
+            img {
+                margin-top: 10%;
+            }
+        
+            .pass {
+                margin-top: 7%;
+            }  
+        
+            h2 {
+                margin-bottom: 10%;
+                color: #ffffff;
+            }
+        
+            .btn-login {
+                margin: auto;
+                font-size: 1.4em;
+                text-transform: none;
+            }
+        
+            .btn-center {
+                text-align: center;
+                text-transform: none;
+            }
+        
+            .background-img {
+            //   background-image: url('../assets/img/bridge.jpg');
+            background: #293C92;
+            }
+        
+            ion-input {
+                margin: 10% auto;
+                font-size: 1.4em;
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 5px;
+                border-right: -10px;
+            }
+        
+             #signup{
+                margin-left: 12px;
+            }
+        
+            .f-password {
+                color:#fff;
+                text-align: center;
+                margin-top: 20px;
+            }
+            
+}

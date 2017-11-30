@@ -1,0 +1,38 @@
+
+ <ion-header>
+  
+    <ion-navbar color="navbar" (click)="goToLogin()">
+      <!-- <ion-icon color="light" name="arrow-back" (click)="goToLogin()"></ion-icon> -->
+      <ion-title>Create Account</ion-title>
+    </ion-navbar>
+  
+  </ion-header> 
+  
+  <ion-content padding>
+    <!--For Backgroung image class="backgroundImage" -->
+    
+    <div text-center class="header">
+      <!-- <img src="assets/img/ex.png"
+      style="border-radius: 50px; height: 50px; width: 50px;"> -->
+      <h3>Trading BitCoin made Easy!</h3>
+      <h2>Create Account Now.</h2>
+    </div>
+  
+  
+    <ion-list>  
+      <ion-input type="text"[(ngModel)]="firstName"  value="" placeholder=" First Name"></ion-input>
+      <ion-input type="text"[(ngModel)]="lastName" value="" placeholder=" Last Name"></ion-input>
+      <ion-input type="email" [(ngModel)]="emailField" value="" placeholder=" Email"></ion-input>      
+      <ion-input type="password" [(ngModel)]="passwordField1" value="" placeholder=" Password"></ion-input>
+       <ion-input type="password" [(ngModel)]="passwordField2" value="" placeholder=" Confirm Password"></ion-input> 
+    </ion-list>
+  
+    
+    <div>
+      <button full round class="btn-signup" color="button" ion-button type="submit" (click)="presentLoading()">Create Account</button>
+    </div>
+  </ion-content>
+  
+  
+  
+  

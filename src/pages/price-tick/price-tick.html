@@ -1,0 +1,56 @@
+
+<ion-header>
+
+  <ion-navbar color="navbar">
+      <button ion-button menuToggle>
+          <ion-icon name = "menu"></ion-icon>
+        </button>
+    <ion-title>My Nairaex</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background-img">
+  <div class="div-text" text-center>
+    <h2>Price Tickers</h2>
+    <h4>Calculate the price to buy or sell Bitcoin & Perfect Money in Naira.</h4>
+  </div>
+
+  <ion-label>Buy or Sell</ion-label>
+  <ion-item class="selectors" >
+      <ion-label>{{transaction}}</ion-label>
+      <ion-select [(ngModel)]="transaction">
+        <ion-option value="buy">BUY</ion-option>
+        <ion-option value="sell">SELL</ion-option>
+      </ion-select>
+  </ion-item>
+
+
+
+    <ion-label>Select Coin</ion-label>
+    <ion-item class="selectors">
+      <ion-label>{{coins}}</ion-label>
+      <ion-select [(ngModel)]="coins">
+        <ion-option value="btc">BTC</ion-option>
+        <ion-option value="pm">Perfect Money</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-label> Select Amount</ion-label>
+    <ion-input  *ngIf="coins == 'btc' " type="number" [(ngModel)]= "bitcoin" value="" placeholder=" Bitcoin" required></ion-input>  
+    <ion-input  *ngIf="coins == 'pm' "  type="number" [(ngModel)]= "perfectmoney" value="" placeholder=" Perfect Money" required></ion-input>  
+    <br>
+    <ion-label> Value in Naira</ion-label>
+    <ion-input type="number"  *ngIf="coins == 'btc' " [(ngModel)]="bitcoinNaira" value="{{btccurrency}}" placeholder=" NGN &nbsp; "></ion-input>
+    <ion-input type="number"  *ngIf="coins == 'pm' " [(ngModel)]="perfectmoneyNaira" value="{{pmcurrency}}" placeholder=" NGN &nbsp; "></ion-input>
+
+</ion-content>
+
+
+
+
+    
+    
+    
+    

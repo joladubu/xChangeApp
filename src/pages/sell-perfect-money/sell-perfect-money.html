@@ -1,0 +1,55 @@
+<ion-header>
+    
+      <ion-navbar color="navbar">
+        <ion-title>Sell Perfect Money</ion-title>
+      </ion-navbar>
+    
+    </ion-header>
+    
+    
+    <ion-content padding>
+    
+        
+        <ion-label no-padding color="primary">Choose a Bank Account?</ion-label>
+        
+          <ion-item no-lines>
+            <ion-label no-padding>{{bank}}</ion-label>
+            <ion-select [(ngModel)]="bank">
+              <ion-option value="first bank">First Bank</ion-option>
+              <ion-option value="diamond bank">Diamond Bank</ion-option>
+            </ion-select>
+          </ion-item>
+    
+          
+          <ion-list>   
+              <ion-item no-lines>
+                <ion-label  color="primary" stacked>Perfect Money Amount</ion-label>
+                <ion-input type="number" placeholder="1"></ion-input>
+              </ion-item>
+    
+              <ion-item no-lines>
+                <ion-label color="primary" stacked>Naira Amount</ion-label>
+                <ion-input type="number" placeholder="10.00"></ion-input>
+              </ion-item>
+    
+              <ion-item no-lines>
+                  <ion-label color="primary" stacked>Discount Applied</ion-label>
+                  <ion-input type="number" placeholder="0 NGN"></ion-input>
+              </ion-item>
+    
+              <ion-item no-lines>
+                  <ion-label color="primary" stacked>You will receive</ion-label>
+                  <ion-input type="number" placeholder="110.00 NGN" disabled></ion-input>
+              </ion-item>
+    
+              <div padding>
+                  <button full round class="submit-order" color="shopbtn" ion-button type="submit">Submit Order</button>
+              </div>  
+    
+              </ion-list>
+    
+    </ion-content>
+    
+
+
+   

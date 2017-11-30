@@ -1,0 +1,25 @@
+page-sell-bitcoin {
+    ion-input {
+        border: 1px solid rgb(189, 184, 184);
+        border-radius: 5px;
+        padding-left: 15px;
+        // margin-top: 10px;
+    }
+
+    ion-label {
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+
+    ion-item {
+        margin-bottom: 40%;
+    }
+
+
+    .submit-order {
+        text-transform: none;
+        color:#fff;
+        margin-top: 10%;
+    }
+
+}

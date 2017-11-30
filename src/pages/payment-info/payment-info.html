@@ -1,0 +1,54 @@
+<!--
+  Generated template for the PaymentInfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="navbar">
+    <ion-title>Payment Information</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h4 color="navbar">Please provide a Payment Option to enable bitcoin trading</h4>
+
+  <ion-label><h6 color="navbar">Select Payment:</h6></ion-label>
+    
+  <ion-item class="selectors">
+    <ion-label>{{options}}</ion-label>
+    <ion-select [(ngModel)]="options">
+      <ion-option value="Naira Bank">Naira Bank</ion-option>
+      <ion-option value="Perfect Money">Perfect Money</ion-option>
+    </ion-select>
+  </ion-item>
+<br>
+  <ion-item class="selectors">
+      <ion-label >{{banks}}</ion-label>
+      <ion-select [(ngModel)]="banks" >
+        <ion-option value="Access Bank">Access Bank</ion-option>
+        <ion-option value="Skye Bank">Skye Bank</ion-option>
+        <ion-option value="GTB">Guarantee Trust Bank</ion-option>
+      </ion-select>
+  </ion-item>
+  <br>
+  <ion-item>
+    <!-- <ion-label col-5>Account Name</ion-label> -->
+    <ion-input  type="name" [(ngModel)]="accountname" name="name" placeholder="Account Name" required></ion-input>
+  </ion-item>  
+  <ion-item>
+      <!-- <ion-label col-5>Account Number</ion-label> -->
+      <ion-input type="name" [(ngModel)]="accountnumber" name="name" placeholder="NUBAN Account number" required></ion-input>
+  </ion-item>  
+  <button class="pay-btn" ion-button color="button" (click)="createPaymentMethod()" full round>Submit Payment Option</button>
+
+  <h1>Payment Option</h1>
+  <ion-list>
+    <button ion-item  (click)="itemSelected(item)">
+      {{bankName}}
+    </button>  
+  </ion-list>
+  </ion-content>

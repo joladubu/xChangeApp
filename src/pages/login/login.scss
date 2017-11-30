@@ -1,0 +1,53 @@
+page-login {    
+                ion-content {
+                    margin: auto
+                }
+                
+                .header {
+                    margin-bottom: 30%;
+                }
+            
+                h2 {
+                    margin-bottom: 3%;
+                    color: #222;
+                }
+
+                h3 {
+                    margin-bottom: 5%;
+                }
+            
+              
+                .btn-center {
+                    text-align: center;
+                    color: #fff;
+                    margin-top: 10%;
+                    font-size: 1.4em;
+                    
+                }
+            
+              
+                ion-input {
+                    border: 1px solid rgb(189, 184, 184);
+                    border-radius: 5px;
+                    padding-left: 15px;
+                    margin-top: 10px;
+                }
+            
+              
+                .f-password {
+                    color: #222;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+
+                .btn-login {
+                    text-transform: none;
+                    
+                }
+
+                img {
+                    z-index: 1;
+                }
+
+               
+    }

@@ -1,0 +1,25 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar color="navbar">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+ 
+  <ion-content>
+
+    <ion-list color="navbar">
+      <button menuClose ion-item (click)="goToProfilePage()"><ion-icon color="navbar" name="person"></ion-icon> &nbsp;Profile</button>
+      <button menuClose ion-item (click)="goToBuyOrders()"><ion-icon color="navbar" name="logo-bitcoin"></ion-icon> &nbsp;Buy Orders</button> 
+      <button menuClose ion-item (click)="goToSellOrders()"><ion-icon color="navbar" name="logo-bitcoin"></ion-icon> &nbsp;Sell Orders</button>        
+      <button menuClose ion-item (click)="goToPayment()"><ion-icon color="navbar" name="card"></ion-icon> &nbsp;Payment Info</button>
+      <!-- <button menuClose ion-item ><ion-icon color="navbar" name="checkmark-circle-outline"></ion-icon> &nbsp;Verification</button>         -->
+      <!-- <button menuClose ion-item ><ion-icon color="navbar" name="build"></ion-icon> &nbsp;Settings</button>         -->
+      <button menuClose ion-item (click)="goToReferrals()" ><ion-icon color="navbar" name="paw"></ion-icon> &nbsp;Referrals</button>        
+      <button menuClose ion-item (click)="logout()" ><ion-icon color="navbar" name="log-out"></ion-icon> &nbsp;Logout</button>        
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

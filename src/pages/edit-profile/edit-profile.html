@@ -1,0 +1,61 @@
+
+<ion-header>
+
+  <ion-navbar color="navbar">
+    <ion-title>My Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+         <ion-list>
+
+           <ion-row>
+            <ion-item>
+              <ion-label col-4>User ID:</ion-label>
+              <ion-input [(ngModel)]="userId"  placeholder="1412" type="number" col-7></ion-input>
+            </ion-item>
+          </ion-row>
+          
+          <ion-row>
+            <ion-item>
+              <ion-label>First Name:</ion-label>
+              <ion-input [(ngModel)]="firstname" placeholder="Yousouf" type="text" ></ion-input>
+            </ion-item>
+          </ion-row>
+
+         <ion-row> 
+          <ion-item>
+            <ion-label>Last Name:</ion-label>
+            <ion-input [(ngModel)]="lastName" placeholder="Chinedu" type="text"></ion-input>
+         </ion-item>
+         </ion-row>
+
+            
+         <ion-row>
+          <ion-item>
+            <ion-label>Email:</ion-label>
+            <ion-input [(ngModel)]="email" placeholder="example@live.com" type="email"></ion-input>
+          </ion-item>
+         </ion-row>          
+
+         <ion-row>
+            <ion-item>
+              <ion-label>Phone:</ion-label>
+              <ion-input [(ngModel)]="phone" placeholder="08094458878" type="text"></ion-input>
+            </ion-item>
+          </ion-row>
+
+          <ion-row>
+            <ion-item>
+              <ion-label>Address:</ion-label>
+              <ion-textarea [(ngModel)]="address" placeholder="1, Lagos, Lagos Nigeria" name="description"></ion-textarea>
+            </ion-item>
+          </ion-row>
+
+      </ion-list>
+
+      <button ion-button  color="button" round full (click)="presentLoading()">Save</button>
+</ion-content>

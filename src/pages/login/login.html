@@ -1,0 +1,45 @@
+
+
+<ion-header>
+
+  <ion-navbar color="navbar">
+    <ion-title text-center>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding color="background">
+  <!--For Backgroung image class="backgroundImage" -->
+  
+  <div class="header" text-center>
+    <!-- <img src="assets/img/ex.png"
+    style="border-radius: 50px; height: 50px; width: 50px;">
+    <h2 color="navbar">Nairaex</h2>
+    <h3>Nigeria's Premier Bitcoin Exchange</h3> -->
+  </div>
+  <form (submit)="doLogin()">
+
+
+ <!-- <ion-list>  -->
+
+    
+    <ion-input type="email" [(ngModel)]="loginData.email" value="jekayode@live.com" name="email" placeholder=" email" required></ion-input>
+    <ion-input type="password"  [(ngModel)]="loginData.password" value="wisdom01" name="password" placeholder=" Password" required></ion-input>
+
+ <!-- </ion-list>  -->
+
+ <div class="btn-center">  
+    <button ion-button  round color= "button" class="btn-login" type="submit" (click)="doLogin()">Login</button>
+    <button ion-button  round color= "button" class="btn-login" (click)="Signup()">SignUp</button>
+ </div>
+ 
+ <div class="f-password">
+    <h6 color="navbar" (click)="showAlert()">Forgot your password?</h6>
+ </div>
+ </form>
+
+</ion-content>
+
+
+
